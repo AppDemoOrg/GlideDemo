@@ -10,8 +10,6 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 
-import cn.xm.weidongjian.glide.R;
-
 /**
  * @描述：      @MainActivity
  * @作者：      @黄卫旗
