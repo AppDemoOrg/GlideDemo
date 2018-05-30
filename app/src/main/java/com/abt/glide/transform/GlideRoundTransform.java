@@ -1,4 +1,4 @@
-package com.abt.glide;
+package com.abt.glide.transform;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -12,9 +12,9 @@ import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 
 /**
- * @描述：      @GlideRoundTransform
- * @作者：      @黄卫旗
- * @创建时间：  @2018-04-25
+ * @描述： @GlideRoundTransform
+ * @作者： @黄卫旗
+ * @创建时间： @2018-04-25
  */
 public class GlideRoundTransform extends BitmapTransformation {
 
@@ -51,7 +51,8 @@ public class GlideRoundTransform extends BitmapTransformation {
         return result;
     }
 
-    @Override public String getId() {
+    @Override
+    public String getId() {
         return getClass().getName() + Math.round(radius);
     }
 }

@@ -1,4 +1,4 @@
-package com.abt.glide;
+package com.abt.glide.transform;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,16 +10,18 @@ import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 
 /**
- * @描述：      @GlideCircleTransform
- * @作者：      @黄卫旗
- * @创建时间：  @2018-04-25
+ * @描述： @GlideCircleTransform
+ * @作者： @黄卫旗
+ * @创建时间： @2018-04-25
  */
 public class GlideCircleTransform extends BitmapTransformation {
+
     public GlideCircleTransform(Context context) {
         super(context);
     }
 
-    @Override protected Bitmap transform(BitmapPool pool, Bitmap toTransform, int outWidth, int outHeight) {
+    @Override
+    protected Bitmap transform(BitmapPool pool, Bitmap toTransform, int outWidth, int outHeight) {
         return circleCrop(pool, toTransform);
     }
 
@@ -47,7 +49,8 @@ public class GlideCircleTransform extends BitmapTransformation {
         return result;
     }
 
-    @Override public String getId() {
+    @Override
+    public String getId() {
         return getClass().getName();
     }
 }
